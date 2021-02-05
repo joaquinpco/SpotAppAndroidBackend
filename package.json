@@ -1,0 +1,30 @@
+{
+  "name": "spotappandroidbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilogar/SpotAppAndroidBackend.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Azure"
+  ],
+  "author": "Guillermo López García & José Joaquín Pérez-Calderón Ortiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilogar/SpotAppAndroidBackend/issues"
+  },
+  "homepage": "https://github.com/guilogar/SpotAppAndroidBackend#readme",
+  "dependencies": {
+    "@azure/cosmos": "^3.9.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
