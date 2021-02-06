@@ -20,5 +20,5 @@ app.use(baseAPI + '/clubs', clubs);
 const server = http.createServer(app);
 
 server.listen(PORT, function() {
-    console.log('Server up and running on localhost:' + PORT);
+    console.log('Server up and running on 127.0.0.1:' + PORT);
 });
