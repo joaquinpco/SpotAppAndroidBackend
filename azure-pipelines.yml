@@ -13,4 +13,4 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: $(vmImageName)
+      vmImage: ${{vmImageName}}
