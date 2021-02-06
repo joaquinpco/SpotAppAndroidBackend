@@ -5,14 +5,7 @@
 
 trigger:
 - main
-stages:
-- stage: Build
-  displayName: Build stage
-  jobs:  
-  - job: Build
-    displayName: Build
-    pool:
-      vmImage: $(vmImageName)
+
 steps:
   - task: NodeTool@0
     inputs:
@@ -35,6 +28,14 @@ steps:
   - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
     artifact: drop
 
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:  
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
